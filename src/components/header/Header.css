@@ -1,0 +1,91 @@
+.container {
+    padding: 1.5rem;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.logo span {
+    color: crimson;
+    font-weight: 600;
+}
+
+.right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    font-weight: 500;
+}
+
+.menu li {
+    text-transform: uppercase;
+}
+
+.menu li:hover {
+    color: crimson;
+    cursor: pointer;
+
+}
+
+.search {
+    width: 7rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    height: 60%;
+}
+
+.heart {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.bar {
+    display: none;
+}
+
+@media screen and (max-width:991px) {
+    .right {
+        position: absolute;
+        right: 2rem;
+        z-index: 9999;
+        background: #fff;
+        color: #000;
+        border-radius: 5px;
+        flex-direction: column;
+        padding: 1rem;
+        width: 20%;
+    }
+
+    .menu01 {
+        flex-direction: column;
+        margin-left: -2rem;
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .search {
+        display: none;
+    }
+}

@@ -1,0 +1,54 @@
+.container2 {
+    padding: 0 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.projects {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 25% auto;
+}
+
+.menu1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.menu1 li:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    height: 25rem;
+    overflow-y: scroll;
+    grid-gap: 2rem;
+    justify-content: space-between;
+}
+
+.project {
+    width: 12rem;
+    height: 8rem;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    display: flex;
+    border-radius: 1rem;
+}
+
+.project img {
+    top: 3rem;
+    width: 6rem;
+    height: 11rem;
+}

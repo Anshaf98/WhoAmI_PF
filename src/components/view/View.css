@@ -1,0 +1,48 @@
+.view {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.left span:nth-child(1) {
+    font-size: 2rem;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.left span:nth-child(2) {
+    font-size: 1.5rem;
+    display: block;
+    text-transform: uppercase;
+    width: 20rem;
+}
+
+.left span:nth-child(3) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.wrapper1 {
+    width: 25rem;
+}
+
+@media screen and (max-width: 900px) {
+    .view {
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
